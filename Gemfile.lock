@@ -108,6 +108,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     pg (0.21.0)
     public_suffix (3.0.0)
+    puma (3.10.0)
     rack (2.0.3)
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
@@ -154,8 +155,12 @@ DEPENDENCIES
   hanami-model (~> 1.1)
   minitest
   pg
+  puma
   rake
   shotgun
+
+RUBY VERSION
+   ruby 2.3.4p301
 
 BUNDLED WITH
    1.16.0
