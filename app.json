@@ -7,5 +7,9 @@
     {
       "plan": "heroku-postgresql",
     }
-  ]
+  ],
+
+  "scripts": {
+    "postdeploy": "bundle exec hanami db migrate"
+  }
 }
