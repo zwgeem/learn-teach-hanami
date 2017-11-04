@@ -1,0 +1,11 @@
+{
+  "name": "Learn Teach Hanami",
+  "description": "Learning, Teaching with Hanami",
+  "keywords": ["ruby", "hanami"],
+
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+    }
+  ]
+}

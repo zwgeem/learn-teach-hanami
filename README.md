@@ -1,6 +1,8 @@
 # Learn Teach Hanami
 
-Welcome to your new Hanami project!
+## Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Setup
 
