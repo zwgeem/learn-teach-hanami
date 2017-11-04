@@ -6,3 +6,4 @@
 get '/', to: 'home#index'
 get '/entries', to: 'entries#index'
 get '/entries/new', to: 'entries#new'
+post '/entries', to: 'entries#create'
