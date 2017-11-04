@@ -1,0 +1,3 @@
+project=learn_teach_hanami
+test=minitest
+template=erb
