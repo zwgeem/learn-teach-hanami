@@ -3,22 +3,36 @@
     <div class='container'>
       <h1 class='display-3'>My Guestbook</h1>
       <p>Say something nice about me</p>
+      <p><a class='btn btn-primary btn-lg' href='<%= routes.new_entry_path %>' role='button'>Sign my Guestbook</a></p>
     </div>
   </div>
 
   <div class='container'>
+    <% if entries.any? %>
+      <% entries.each_slice(3) do |sliced_entries| %>
+        <div class='row'>
+          <% sliced_entries.each do |entry| %>
+            <div class='col-md-4'>
+              <h2><%= entry.name %></h2>
+              <p><%= entry.content %></p>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+
     <div class='row'>
       <div class='col-md-4'>
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <h2>Fake Person 1</h2>
+        <p>좋은 사람 ^^</p>
       </div>
       <div class='col-md-4'>
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <h2>Fake Person 2</h2>
+        <p>ㅋㅋㅋ 뭐라할까?</p>
       </div>
       <div class='col-md-4'>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <h2>Fake Person 3</h2>
+        <p>This is a fake comment</p>
       </div>
     </div>
   </div>
