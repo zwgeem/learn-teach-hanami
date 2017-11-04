@@ -1,0 +1,27 @@
+<main role='main'>
+  <div class='container'>
+    <div class='row'>
+      <h2>Sign guestbook</h2>
+    </div>
+
+    <div class='row'>
+      <%=
+        form_for :entry, '/entries' do
+          div class: 'input form-group' do
+            label      :name
+            text_field :name, class: 'form-control form-text'
+          end
+
+          div class: 'input form-group' do
+            label      :content
+            text_area :content, class: 'form-control'
+          end
+
+          div class: 'controls' do
+            submit 'Submit'
+          end
+        end
+      %>
+    </div>
+  </div>
+</main>
