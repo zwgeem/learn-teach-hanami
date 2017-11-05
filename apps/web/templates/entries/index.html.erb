@@ -22,19 +22,10 @@
       <% end %>
     <% end %>
 
-    <div class='row'>
-      <div class='col-md-4'>
-        <h2>Fake Person 1</h2>
-        <p>좋은 사람 ^^</p>
+    <% if entries.size == 0 %>
+      <div class='row'>
+        No one has signed your guestbook yet.
       </div>
-      <div class='col-md-4'>
-        <h2>Fake Person 2</h2>
-        <p>ㅋㅋㅋ 뭐라할까?</p>
-      </div>
-      <div class='col-md-4'>
-        <h2>Fake Person 3</h2>
-        <p>This is a fake comment</p>
-      </div>
-    </div>
+    <% end %>
   </div>
 </main>
